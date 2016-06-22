@@ -15,6 +15,7 @@
 		0385C5F81D1AC6E9007B6704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0385C5F61D1AC6E9007B6704 /* LaunchScreen.storyboard */; };
 		0385C6031D1AC6E9007B6704 /* Paris_Games_WeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C6021D1AC6E9007B6704 /* Paris_Games_WeekTests.swift */; };
 		0385C60E1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */; };
+		03887B1A1D1ADA1B005D891E /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03887B191D1ADA1B005D891E /* info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0385C6091D1AC6E9007B6704 /* Paris Games WeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paris Games WeekUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Games_WeekUITests.swift; sourceTree = "<group>"; };
 		0385C60F1D1AC6E9007B6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03887B191D1ADA1B005D891E /* info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = info.swift; path = "Paris Games Week/info.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		0385C5DF1D1AC6E9007B6704 = {
 			isa = PBXGroup;
 			children = (
+				03887B191D1ADA1B005D891E /* info.swift */,
 				0385C5EA1D1AC6E9007B6704 /* Paris Games Week */,
 				0385C6011D1AC6E9007B6704 /* Paris Games WeekTests */,
 				0385C60C1D1AC6E9007B6704 /* Paris Games WeekUITests */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */,
+				03887B1A1D1ADA1B005D891E /* info.swift in Sources */,
 				0385C5EE1D1AC6E9007B6704 /* MasterViewController.swift in Sources */,
 				0385C5EC1D1AC6E9007B6704 /* AppDelegate.swift in Sources */,
 			);
@@ -486,6 +490,7 @@
 				0385C6141D1AC6E9007B6704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0385C6151D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games WeekTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +499,7 @@
 				0385C6171D1AC6E9007B6704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0385C6181D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games WeekUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +508,7 @@
 				0385C61A1D1AC6E9007B6704 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
