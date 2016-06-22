@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0385C5EC1D1AC6E9007B6704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C5EB1D1AC6E9007B6704 /* AppDelegate.swift */; };
+		0385C5EE1D1AC6E9007B6704 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C5ED1D1AC6E9007B6704 /* MasterViewController.swift */; };
+		0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C5EF1D1AC6E9007B6704 /* DetailViewController.swift */; };
+		0385C5F31D1AC6E9007B6704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0385C5F11D1AC6E9007B6704 /* Main.storyboard */; };
+		0385C5F51D1AC6E9007B6704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0385C5F41D1AC6E9007B6704 /* Assets.xcassets */; };
+		0385C5F81D1AC6E9007B6704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0385C5F61D1AC6E9007B6704 /* LaunchScreen.storyboard */; };
+		0385C6031D1AC6E9007B6704 /* Paris_Games_WeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C6021D1AC6E9007B6704 /* Paris_Games_WeekTests.swift */; };
+		0385C60E1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0385C5FF1D1AC6E9007B6704 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0385C5E01D1AC6E9007B6704 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0385C5E71D1AC6E9007B6704;
+			remoteInfo = "Paris Games Week";
+		};
+		0385C60A1D1AC6E9007B6704 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0385C5E01D1AC6E9007B6704 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0385C5E71D1AC6E9007B6704;
+			remoteInfo = "Paris Games Week";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0385C5E81D1AC6E9007B6704 /* Paris Games Week.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paris Games Week.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0385C5EB1D1AC6E9007B6704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0385C5ED1D1AC6E9007B6704 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		0385C5EF1D1AC6E9007B6704 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0385C5F21D1AC6E9007B6704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0385C5F41D1AC6E9007B6704 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0385C5F71D1AC6E9007B6704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0385C5F91D1AC6E9007B6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0385C5FE1D1AC6E9007B6704 /* Paris Games WeekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paris Games WeekTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0385C6021D1AC6E9007B6704 /* Paris_Games_WeekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Games_WeekTests.swift; sourceTree = "<group>"; };
+		0385C6041D1AC6E9007B6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0385C6091D1AC6E9007B6704 /* Paris Games WeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paris Games WeekUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Games_WeekUITests.swift; sourceTree = "<group>"; };
+		0385C60F1D1AC6E9007B6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0385C5E51D1AC6E9007B6704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0385C5FB1D1AC6E9007B6704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0385C6061D1AC6E9007B6704 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0385C5DF1D1AC6E9007B6704 = {
+			isa = PBXGroup;
+			children = (
+				0385C5EA1D1AC6E9007B6704 /* Paris Games Week */,
+				0385C6011D1AC6E9007B6704 /* Paris Games WeekTests */,
+				0385C60C1D1AC6E9007B6704 /* Paris Games WeekUITests */,
+				0385C5E91D1AC6E9007B6704 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0385C5E91D1AC6E9007B6704 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0385C5E81D1AC6E9007B6704 /* Paris Games Week.app */,
+				0385C5FE1D1AC6E9007B6704 /* Paris Games WeekTests.xctest */,
+				0385C6091D1AC6E9007B6704 /* Paris Games WeekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0385C5EA1D1AC6E9007B6704 /* Paris Games Week */ = {
+			isa = PBXGroup;
+			children = (
+				0385C5EB1D1AC6E9007B6704 /* AppDelegate.swift */,
+				0385C5ED1D1AC6E9007B6704 /* MasterViewController.swift */,
+				0385C5EF1D1AC6E9007B6704 /* DetailViewController.swift */,
+				0385C5F11D1AC6E9007B6704 /* Main.storyboard */,
+				0385C5F41D1AC6E9007B6704 /* Assets.xcassets */,
+				0385C5F61D1AC6E9007B6704 /* LaunchScreen.storyboard */,
+				0385C5F91D1AC6E9007B6704 /* Info.plist */,
+			);
+			path = "Paris Games Week";
+			sourceTree = "<group>";
+		};
+		0385C6011D1AC6E9007B6704 /* Paris Games WeekTests */ = {
+			isa = PBXGroup;
+			children = (
+				0385C6021D1AC6E9007B6704 /* Paris_Games_WeekTests.swift */,
+				0385C6041D1AC6E9007B6704 /* Info.plist */,
+			);
+			path = "Paris Games WeekTests";
+			sourceTree = "<group>";
+		};
+		0385C60C1D1AC6E9007B6704 /* Paris Games WeekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */,
+				0385C60F1D1AC6E9007B6704 /* Info.plist */,
+			);
+			path = "Paris Games WeekUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0385C5E71D1AC6E9007B6704 /* Paris Games Week */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0385C6121D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games Week" */;
+			buildPhases = (
+				0385C5E41D1AC6E9007B6704 /* Sources */,
+				0385C5E51D1AC6E9007B6704 /* Frameworks */,
+				0385C5E61D1AC6E9007B6704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paris Games Week";
+			productName = "Paris Games Week";
+			productReference = 0385C5E81D1AC6E9007B6704 /* Paris Games Week.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0385C5FD1D1AC6E9007B6704 /* Paris Games WeekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0385C6151D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games WeekTests" */;
+			buildPhases = (
+				0385C5FA1D1AC6E9007B6704 /* Sources */,
+				0385C5FB1D1AC6E9007B6704 /* Frameworks */,
+				0385C5FC1D1AC6E9007B6704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0385C6001D1AC6E9007B6704 /* PBXTargetDependency */,
+			);
+			name = "Paris Games WeekTests";
+			productName = "Paris Games WeekTests";
+			productReference = 0385C5FE1D1AC6E9007B6704 /* Paris Games WeekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0385C6081D1AC6E9007B6704 /* Paris Games WeekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0385C6181D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games WeekUITests" */;
+			buildPhases = (
+				0385C6051D1AC6E9007B6704 /* Sources */,
+				0385C6061D1AC6E9007B6704 /* Frameworks */,
+				0385C6071D1AC6E9007B6704 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0385C60B1D1AC6E9007B6704 /* PBXTargetDependency */,
+			);
+			name = "Paris Games WeekUITests";
+			productName = "Paris Games WeekUITests";
+			productReference = 0385C6091D1AC6E9007B6704 /* Paris Games WeekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0385C5E01D1AC6E9007B6704 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Paris Games Week";
+				TargetAttributes = {
+					0385C5E71D1AC6E9007B6704 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					0385C5FD1D1AC6E9007B6704 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0385C5E71D1AC6E9007B6704;
+					};
+					0385C6081D1AC6E9007B6704 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0385C5E71D1AC6E9007B6704;
+					};
+				};
+			};
+			buildConfigurationList = 0385C5E31D1AC6E9007B6704 /* Build configuration list for PBXProject "Paris Games Week" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0385C5DF1D1AC6E9007B6704;
+			productRefGroup = 0385C5E91D1AC6E9007B6704 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0385C5E71D1AC6E9007B6704 /* Paris Games Week */,
+				0385C5FD1D1AC6E9007B6704 /* Paris Games WeekTests */,
+				0385C6081D1AC6E9007B6704 /* Paris Games WeekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0385C5E61D1AC6E9007B6704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0385C5F81D1AC6E9007B6704 /* LaunchScreen.storyboard in Resources */,
+				0385C5F51D1AC6E9007B6704 /* Assets.xcassets in Resources */,
+				0385C5F31D1AC6E9007B6704 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0385C5FC1D1AC6E9007B6704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0385C6071D1AC6E9007B6704 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0385C5E41D1AC6E9007B6704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */,
+				0385C5EE1D1AC6E9007B6704 /* MasterViewController.swift in Sources */,
+				0385C5EC1D1AC6E9007B6704 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0385C5FA1D1AC6E9007B6704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0385C6031D1AC6E9007B6704 /* Paris_Games_WeekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0385C6051D1AC6E9007B6704 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0385C60E1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0385C6001D1AC6E9007B6704 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0385C5E71D1AC6E9007B6704 /* Paris Games Week */;
+			targetProxy = 0385C5FF1D1AC6E9007B6704 /* PBXContainerItemProxy */;
+		};
+		0385C60B1D1AC6E9007B6704 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0385C5E71D1AC6E9007B6704 /* Paris Games Week */;
+			targetProxy = 0385C60A1D1AC6E9007B6704 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0385C5F11D1AC6E9007B6704 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0385C5F21D1AC6E9007B6704 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0385C5F61D1AC6E9007B6704 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0385C5F71D1AC6E9007B6704 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0385C6101D1AC6E9007B6704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0385C6111D1AC6E9007B6704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0385C6131D1AC6E9007B6704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Paris Games Week/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-Week";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0385C6141D1AC6E9007B6704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Paris Games Week/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-Week";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0385C6161D1AC6E9007B6704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Paris Games WeekTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-WeekTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paris Games Week.app/Paris Games Week";
+			};
+			name = Debug;
+		};
+		0385C6171D1AC6E9007B6704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Paris Games WeekTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-WeekTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paris Games Week.app/Paris Games Week";
+			};
+			name = Release;
+		};
+		0385C6191D1AC6E9007B6704 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paris Games WeekUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-WeekUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Paris Games Week";
+			};
+			name = Debug;
+		};
+		0385C61A1D1AC6E9007B6704 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Paris Games WeekUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-WeekUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Paris Games Week";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0385C5E31D1AC6E9007B6704 /* Build configuration list for PBXProject "Paris Games Week" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0385C6101D1AC6E9007B6704 /* Debug */,
+				0385C6111D1AC6E9007B6704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0385C6121D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games Week" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0385C6131D1AC6E9007B6704 /* Debug */,
+				0385C6141D1AC6E9007B6704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0385C6151D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games WeekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0385C6161D1AC6E9007B6704 /* Debug */,
+				0385C6171D1AC6E9007B6704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0385C6181D1AC6E9007B6704 /* Build configuration list for PBXNativeTarget "Paris Games WeekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0385C6191D1AC6E9007B6704 /* Debug */,
+				0385C61A1D1AC6E9007B6704 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0385C5E01D1AC6E9007B6704 /* Project object */;
+}
