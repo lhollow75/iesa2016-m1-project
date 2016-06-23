@@ -11,11 +11,9 @@
 import Foundation
 
 class Stand {
-    var title: String = ""
-    var author: String = ""
+    var name: String = ""
+    var place: String = ""
     var description: String = ""
-    
-    
 }
 
 

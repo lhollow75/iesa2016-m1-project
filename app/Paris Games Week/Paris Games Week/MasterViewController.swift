@@ -37,23 +37,34 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    /*
+    
+    @IBOutlet var newWordField: UITextField
+    func wordEntered(alert: UIAlertAction!){
+        // store the new word
+        self.textView2.text = deletedString + " " + self.newWordField.text
+    }
+    func addTextField(textField: UITextField!){
+        // add the text field and make the result global
+        textField.placeholder = "Definition"
+        self.newWordField = textField
+    }
+    
+    // display an alert
+    let newWordPrompt = UIAlertController(title: "Enter definition", message: "Trainging the machine!", preferredStyle: UIAlertControllerStyle.Alert)
+    newWordPrompt.addTextFieldWithConfigurationHandler(addTextField)
+    newWordPrompt.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
+    newWordPrompt.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: wordEntered))
+    presentViewController(newWordPrompt, animated: true, completion: nil)
+    
+    */
+    
 
     func insertNewObject(sender: AnyObject) {
 
-        /*let book3 = Book()
-        print(myBookStore.books)
-        book3.title = "kikoo"
-        book3.author = "Axel"
-        book3.description = "coucou"
-        print(book3.title)
-        myBookStore.books.append(book3)
-        print(myBookStore.books)
-        print(myBookStore.books[2].title)
-        let indexPath = NSIndexPath(forRow: 2, inSection: 0)
-        //self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)*/
-        
-        let alert = UIAlertController(title: "New Book",
-            message: "Get the title",
+        let alert = UIAlertController(title: "New Stand",
+            message: "Stand title",
             preferredStyle: .Alert)
 
         let saveAction = UIAlertAction(title: "Save", style: .Default) {
@@ -61,18 +72,14 @@ class MasterViewController: UITableViewController {
                 let textField = alert.textFields![0]
             
             let stand = Stand()
-            print(self.myStandStore.stands)
-            stand.title = "kikoo"
-            stand.author = "Axel"
+            stand.name = textField.text!
+            stand.place = "Axel"
             stand.description = "coucou"
-            print(stand.title)
             self.myStandStore.stands.append(stand)
             print(self.myStandStore.stands)
-            print(self.myStandStore.stands[2].title)
+            print(self.myStandStore.stands[2].name)
             let indexPath = NSIndexPath(forRow: 2, inSection: 0)
-                //print(self)
-                //self.createBookWithTitle(textField.text!)
-                self.tableView.reloadData()
+            self.tableView.reloadData()
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default) {
@@ -119,7 +126,7 @@ class MasterViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
 
-        cell.textLabel!.text = myStandStore.stands[indexPath.row].title
+        cell.textLabel!.text = myStandStore.stands[indexPath.row].name
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
     }
