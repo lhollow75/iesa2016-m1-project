@@ -96,38 +96,6 @@
             </objects>
             <point key="canvasLocation" x="-4720" y="46"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="CWV-Ux-9or">
-            <objects>
-                <tableViewController id="DGu-Gq-azI" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="97p-Su-4Nq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vO8-lY-N2e">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vO8-lY-N2e" id="nOx-Kp-OxC">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="DGu-Gq-azI" id="K9J-0R-BFh"/>
-                            <outlet property="delegate" destination="DGu-Gq-azI" id="YJN-I7-Yry"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Zuf-hv-1ea"/>
-                    <connections>
-                        <segue destination="UOd-ve-QFu" kind="push" id="C7X-y1-i1k"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PVf-wW-GSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2479" y="2790"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="kTg-Wu-eq4">
             <objects>
@@ -137,7 +105,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DGu-Gq-azI" kind="relationship" relationship="rootViewController" id="jC9-GO-nVH"/>
+                        <segue destination="peC-EJ-4TX" kind="relationship" relationship="rootViewController" id="Gio-OQ-dtg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWR-iS-ltg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,7 +153,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2290" y="394"/>
+            <point key="canvasLocation" x="-2278" y="406"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qtU-3C-xRN">
@@ -337,7 +305,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                                 <rect key="frame" x="156" y="221" width="205" height="30"/>
                                 <state key="normal" title="Planning des sessions"/>
                                 <connections>
-                                    <segue destination="DGu-Gq-azI" kind="push" id="oHK-Rl-UhQ"/>
+                                    <segue destination="peC-EJ-4TX" kind="push" id="Q5j-k7-Mmi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -430,9 +398,52 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
             </objects>
             <point key="canvasLocation" x="-403" y="2849"/>
         </scene>
+        <!--Master-->
+        <scene sceneID="pDi-fW-7nI">
+            <objects>
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="peC-EJ-4TX" customClass="MasterViewController" customModule="Paris_Games_Week" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C1d-b7-hhI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Akc-N9-k3i" style="IBUITableViewCellStyleDefault" id="NJg-Ld-ooL">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NJg-Ld-ooL" id="9a5-gv-wEm">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Akc-N9-k3i">
+                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="peC-EJ-4TX" id="Htc-ID-llZ"/>
+                            <outlet property="delegate" destination="peC-EJ-4TX" id="Ptu-YM-21M"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Menu" id="745-r9-fmW"/>
+                    <connections>
+                        <segue destination="UOd-ve-QFu" kind="push" id="8LI-i7-jTY"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j9m-G5-WrM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2622" y="2798"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oHK-Rl-UhQ"/>
         <segue reference="rwI-Sg-bgC"/>
+        <segue reference="Q5j-k7-Mmi"/>
     </inferredMetricsTieBreakers>
 </document>
