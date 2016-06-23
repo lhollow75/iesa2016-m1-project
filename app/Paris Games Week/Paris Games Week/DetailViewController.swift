@@ -28,8 +28,8 @@ class DetailViewController: UIViewController {
         if let detail: AnyObject = self.detailItem {
             let stand = detail as! Stand
             standName.text = stand.name
-            standDescription.text = stand.infos
             standPlace.text = stand.place
+            standDescription.text = stand.infos
         }
     }
 
