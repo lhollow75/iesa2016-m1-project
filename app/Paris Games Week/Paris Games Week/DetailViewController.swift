@@ -12,10 +12,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var textHoraires: UITextField!
     @IBOutlet weak var textAdresses: UITextField!
-    @IBOutlet weak var textNumeros: UITextField!
-    @IBOutlet weak var textMails: UITextField!
-    @IBOutlet weak var textTarifs: UITextField!
-    @IBOutlet weak var textAcces: UITextField!
+    @IBOutlet weak var textTarifs: UITextView!
+    @IBOutlet weak var textAcces: UITextView!
 
     var detailItem: AnyObject? {
         didSet {
@@ -29,9 +27,8 @@ class DetailViewController: UIViewController {
             let info = detail as! Info
             textHoraires.text = info.horaires
             textAdresses.text = info.adresses
-            textNumeros.text = info.numeros
-            textMails.text = info.mails
-            textTarifs.text = info.acces
+            textTarifs.text = info.tarifs
+            textAcces.text = info.acces
         }
     }
 
