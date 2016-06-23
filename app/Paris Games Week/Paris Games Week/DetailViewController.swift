@@ -10,22 +10,28 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    @IBOutlet weak var textHoraires: UITextField!
+    @IBOutlet weak var textAdresses: UITextField!
+    @IBOutlet weak var textNumeros: UITextField!
+    @IBOutlet weak var textMails: UITextField!
+    @IBOutlet weak var textTarifs: UITextField!
+    @IBOutlet weak var textAcces: UITextField!
 
     var detailItem: AnyObject? {
         didSet {
-            // Update the view.
-            self.configureView()
+           
         }
     }
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = self.detailItem {
-            if let label = self.detailDescriptionLabel {
-                label.text = detail.description
-            }
+        if let detail: AnyObject = self.detailItem {
+            let info = detail as! Info
+            textHoraires.text = info.horaires
+            textAdresses.text = info.adresses
+            textNumeros.text = info.numeros
+            textMails.text = info.mails
+            textTarifs.text = info.acces
         }
     }
 

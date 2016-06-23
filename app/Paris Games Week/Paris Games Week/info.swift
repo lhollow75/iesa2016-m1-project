@@ -13,5 +13,6 @@ class Info {
     var adresses : String = ""
     var numeros : String = ""
     var mails : String = ""
-    var itinéraire : String = ""
+    var tarifs : String = ""
+    var acces : String = ""
 }
