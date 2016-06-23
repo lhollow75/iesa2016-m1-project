@@ -37,29 +37,6 @@ class MasterViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    /*
-    
-    @IBOutlet var newWordField: UITextField
-    func wordEntered(alert: UIAlertAction!){
-        // store the new word
-        self.textView2.text = deletedString + " " + self.newWordField.text
-    }
-    func addTextField(textField: UITextField!){
-        // add the text field and make the result global
-        textField.placeholder = "Definition"
-        self.newWordField = textField
-    }
-    
-    // display an alert
-    let newWordPrompt = UIAlertController(title: "Enter definition", message: "Trainging the machine!", preferredStyle: UIAlertControllerStyle.Alert)
-    newWordPrompt.addTextFieldWithConfigurationHandler(addTextField)
-    newWordPrompt.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Default, handler: nil))
-    newWordPrompt.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: wordEntered))
-    presentViewController(newWordPrompt, animated: true, completion: nil)
-    
-    */
-    
 
     func insertNewObject(sender: AnyObject) {
 
