@@ -33,7 +33,7 @@ class SessionView: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,6 +49,13 @@ class SessionView: UITableViewController {
         return cell
     }
     */
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        cell.textLabel!.text = mySessionStore.session[indexPath.row].name
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        return cell
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -103,8 +103,6 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
-
         cell.textLabel!.text = myStandStore.stands[indexPath.row].name
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
