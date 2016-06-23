@@ -11,8 +11,7 @@ import Foundation
 class Info {
     var horaires : String = ""
     var adresses : String = ""
-    var numeros : String = ""
-    var mails : String = ""
     var tarifs : String = ""
     var acces : String = ""
+    var title : String = ""
 }
