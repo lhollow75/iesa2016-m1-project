@@ -5,21 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Master-->
-        <scene sceneID="pY4-Hu-kfo">
-            <objects>
-                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="523" y="-1378"/>
-        </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
@@ -225,11 +210,12 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQA-ZF-GEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1466" y="1261"/>
+            <point key="canvasLocation" x="1594" y="1405"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="vC3-pB-5Vb" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="DjV-YW-jjY">
                         <autoresizingMask key="autoresizingMask"/>
@@ -238,7 +224,6 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                         <segue destination="JEX-9P-axG" kind="relationship" relationship="rootViewController" id="GKi-kA-LjT"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SLD-UC-DBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2347" y="-1047"/>
         </scene>
@@ -279,7 +264,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08a-ac-YgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-102" y="746"/>
+            <point key="canvasLocation" x="-44" y="642"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="61L-fK-SdN">
@@ -297,10 +282,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ql1-Aw-TxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-914" y="746"/>
+            <point key="canvasLocation" x="-856" y="642"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="rwI-Sg-bgC"/>
-    </inferredMetricsTieBreakers>
 </document>
