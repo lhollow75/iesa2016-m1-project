@@ -10,10 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    @IBOutlet weak var textHoraires: UITextField!
-    @IBOutlet weak var textAdresses: UITextField!
-    @IBOutlet weak var textTarifs: UITextView!
-    @IBOutlet weak var textAcces: UITextView!
+
+    @IBOutlet weak var standName: UILabel!
+    @IBOutlet weak var standPlace: UILabel!
+    @IBOutlet weak var standDescription: UILabel!
+
+
 
     var detailItem: AnyObject? {
         didSet {
@@ -24,11 +26,10 @@ class DetailViewController: UIViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail: AnyObject = self.detailItem {
-            let info = detail as! Info
-            textHoraires.text = info.horaires
-            textAdresses.text = info.adresses
-            textTarifs.text = info.tarifs
-            textAcces.text = info.acces
+            let stand = detail as! Stand
+            standName.text = stand.name
+            standDescription.text = stand.infos
+            standPlace.text = stand.place
         }
     }
 

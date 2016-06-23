@@ -81,9 +81,9 @@ class MasterViewController: UITableViewController {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
 
-                let selectedBook:Stand = myStandStore.stands[indexPath.row]
+                let selectedStand:Stand = myStandStore.stands[indexPath.row]
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = selectedBook
+                controller.detailItem = selectedStand
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
