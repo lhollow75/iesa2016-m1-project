@@ -20,6 +20,7 @@
 		1C177D1D1D1C22FC00098BC9 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C177D1C1D1C22FC00098BC9 /* SessionStore.swift */; };
 		1C7D5CEC1D1AE99500048533 /* Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEA1D1AE99500048533 /* Stand.swift */; };
 		1C7D5CED1D1AE99500048533 /* StandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEB1D1AE99500048533 /* StandStore.swift */; };
+		1CA61C091D1C304C00EA6EFB /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA61C081D1C304C00EA6EFB /* SessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		1C177D1C1D1C22FC00098BC9 /* SessionStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionStore.swift; path = "Paris Games Week/SessionStore.swift"; sourceTree = "<group>"; };
 		1C7D5CEA1D1AE99500048533 /* Stand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stand.swift; path = "Paris Games Week/Stand.swift"; sourceTree = "<group>"; };
 		1C7D5CEB1D1AE99500048533 /* StandStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandStore.swift; path = "Paris Games Week/StandStore.swift"; sourceTree = "<group>"; };
+		1CA61C081D1C304C00EA6EFB /* SessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				0385C5EB1D1AC6E9007B6704 /* AppDelegate.swift */,
 				0385C5ED1D1AC6E9007B6704 /* MasterViewController.swift */,
+				1CA61C081D1C304C00EA6EFB /* SessionView.swift */,
 				0385C5EF1D1AC6E9007B6704 /* DetailViewController.swift */,
 				0385C5F11D1AC6E9007B6704 /* Main.storyboard */,
 				0385C5F41D1AC6E9007B6704 /* Assets.xcassets */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA61C091D1C304C00EA6EFB /* SessionView.swift in Sources */,
 				1C177D1B1D1C22EC00098BC9 /* Session.swift in Sources */,
 				0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */,
 				03887B1A1D1ADA1B005D891E /* info.swift in Sources */,
