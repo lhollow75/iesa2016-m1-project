@@ -48,13 +48,17 @@ class MasterViewController: UITableViewController {
             (action: UIAlertAction) -> Void in
                 let textField = alert.textFields![0]
             
-            let stand = Stand()
-            stand.name = textField.text!
-            stand.place = "Axel"
-            stand.description = "coucou"
+            let stand = Stand(name: textField.text!, place: "Axel", infos: "coucou")
+
             self.myStandStore.stands.append(stand)
             let indexPath = NSIndexPath(forRow: 2, inSection: 0)
             self.tableView.reloadData()
+            
+            let defaults = NSUserDefaults.standardUserDefaults()
+            
+            let data = NSKeyedArchiver.archivedDataWithRootObject(self.myStandStore.stands)
+            NSUserDefaults.standardUserDefaults().setObject(data, forKey: "myList")
+
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default) {
@@ -107,7 +111,7 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+        // Return false if you do not want the specified item to be editable.0
         return true
     }
 
@@ -115,6 +119,12 @@ class MasterViewController: UITableViewController {
         if editingStyle == .Delete {
             myStandStore.stands.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            
+            let defaults = NSUserDefaults.standardUserDefaults()
+            
+            let data = NSKeyedArchiver.archivedDataWithRootObject(self.myStandStore.stands)
+            NSUserDefaults.standardUserDefaults().setObject(data, forKey: "myList")
+            
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
