@@ -16,7 +16,8 @@
 		0385C6031D1AC6E9007B6704 /* Paris_Games_WeekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C6021D1AC6E9007B6704 /* Paris_Games_WeekTests.swift */; };
 		0385C60E1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */; };
 		03887B1A1D1ADA1B005D891E /* info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03887B191D1ADA1B005D891E /* info.swift */; };
-		03A61E7F1D1BC5E600A2C235 /* infosDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A61E7E1D1BC5E600A2C235 /* infosDisplay.swift */; };
+		1C7D5CEC1D1AE99500048533 /* Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEA1D1AE99500048533 /* Stand.swift */; };
+		1C7D5CED1D1AE99500048533 /* StandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEB1D1AE99500048533 /* StandStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,8 @@
 		0385C60D1D1AC6E9007B6704 /* Paris_Games_WeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paris_Games_WeekUITests.swift; sourceTree = "<group>"; };
 		0385C60F1D1AC6E9007B6704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03887B191D1ADA1B005D891E /* info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = info.swift; path = "Paris Games Week/info.swift"; sourceTree = "<group>"; };
-		03A61E7E1D1BC5E600A2C235 /* infosDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = infosDisplay.swift; path = "Paris Games Week/infosDisplay.swift"; sourceTree = "<group>"; };
+		1C7D5CEA1D1AE99500048533 /* Stand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stand.swift; path = "Paris Games Week/Stand.swift"; sourceTree = "<group>"; };
+		1C7D5CEB1D1AE99500048533 /* StandStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandStore.swift; path = "Paris Games Week/StandStore.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,8 @@
 		0385C5DF1D1AC6E9007B6704 = {
 			isa = PBXGroup;
 			children = (
-				03A61E7E1D1BC5E600A2C235 /* infosDisplay.swift */,
+				1C7D5CEA1D1AE99500048533 /* Stand.swift */,
+				1C7D5CEB1D1AE99500048533 /* StandStore.swift */,
 				03887B191D1ADA1B005D891E /* info.swift */,
 				0385C5EA1D1AC6E9007B6704 /* Paris Games Week */,
 				0385C6011D1AC6E9007B6704 /* Paris Games WeekTests */,
@@ -265,9 +268,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A61E7F1D1BC5E600A2C235 /* infosDisplay.swift in Sources */,
 				0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */,
 				03887B1A1D1ADA1B005D891E /* info.swift in Sources */,
+				1C7D5CED1D1AE99500048533 /* StandStore.swift in Sources */,
+				1C7D5CEC1D1AE99500048533 /* Stand.swift in Sources */,
 				0385C5EE1D1AC6E9007B6704 /* MasterViewController.swift in Sources */,
 				0385C5EC1D1AC6E9007B6704 /* AppDelegate.swift in Sources */,
 			);
@@ -412,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Paris Games Week/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-Week";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Paris Games Week/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parisgamesweek.Paris-Games-Week";
 				PRODUCT_NAME = "$(TARGET_NAME)";
