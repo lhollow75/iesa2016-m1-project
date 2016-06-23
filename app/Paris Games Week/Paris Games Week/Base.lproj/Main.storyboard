@@ -5,6 +5,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
+        <!--Master-->
+        <scene sceneID="pY4-Hu-kfo">
+            <objects>
+                <navigationController title="Master" id="RMx-3f-FxP" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Pmd-2v-anx">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7bK-jq-Zjz" kind="relationship" relationship="rootViewController" id="tsl-Nk-0bq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8fS-aE-onr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3341" y="-1002"/>
+        </scene>
         <!--Detail-->
         <scene sceneID="yUG-lL-AsK">
             <objects>
@@ -66,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3101" y="-1047"/>
+            <point key="canvasLocation" x="-675" y="-639"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Nki-YV-4Qg">
@@ -79,7 +94,55 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZU-Oi-B1e" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-856" y="-330"/>
+            <point key="canvasLocation" x="-4720" y="46"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="CWV-Ux-9or">
+            <objects>
+                <tableViewController id="DGu-Gq-azI" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="97p-Su-4Nq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="vO8-lY-N2e">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vO8-lY-N2e" id="nOx-Kp-OxC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="DGu-Gq-azI" id="K9J-0R-BFh"/>
+                            <outlet property="delegate" destination="DGu-Gq-azI" id="YJN-I7-Yry"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Zuf-hv-1ea"/>
+                    <connections>
+                        <segue destination="UOd-ve-QFu" kind="push" id="C7X-y1-i1k"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVf-wW-GSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2479" y="2790"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kTg-Wu-eq4">
+            <objects>
+                <navigationController id="lfQ-1F-fXL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="buY-ef-3E0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DGu-Gq-azI" kind="relationship" relationship="rootViewController" id="jC9-GO-nVH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWR-iS-ltg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3827" y="2798"/>
         </scene>
         <!--Master-->
         <scene sceneID="smW-Zh-WAh">
@@ -122,7 +185,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rux-fX-hf1" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1574" y="18"/>
+            <point key="canvasLocation" x="-2290" y="394"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qtU-3C-xRN">
@@ -210,7 +273,24 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQA-ZF-GEm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="1405"/>
+            <point key="canvasLocation" x="-2398" y="1637"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tAj-tc-Lfn">
+            <objects>
+                <navigationController id="UOd-ve-QFu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="P8K-1E-6Zt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6ax-IR-7Vv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SkG-sK-sIX" kind="push" id="Thr-IZ-d78"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ge-Vo-Twc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1178" y="2665"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7l-gg-dq7">
@@ -225,7 +305,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                     </connections>
                 </navigationController>
             </objects>
-            <point key="canvasLocation" x="2347" y="-1047"/>
+            <point key="canvasLocation" x="-1517" y="-671"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZOC-x0-bQz">
@@ -246,15 +326,18 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                                     <segue destination="7bK-jq-Zjz" kind="push" id="rwI-Sg-bgC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Lb-CqU">
-                                <rect key="frame" x="217" y="220" width="71" height="30"/>
-                                <state key="normal" title="Calendrier"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1k-DM-TrF">
                                 <rect key="frame" x="205" y="324" width="95" height="30"/>
                                 <state key="normal" title="Info pratiques"/>
                                 <connections>
                                     <segue destination="gZk-Wa-wtQ" kind="push" id="2qC-Id-2tt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Lb-CqU">
+                                <rect key="frame" x="156" y="221" width="205" height="30"/>
+                                <state key="normal" title="Planning des sessions"/>
+                                <connections>
+                                    <segue destination="DGu-Gq-azI" kind="push" id="oHK-Rl-UhQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -264,7 +347,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08a-ac-YgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="642"/>
+            <point key="canvasLocation" x="-3966" y="1122"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="61L-fK-SdN">
@@ -282,7 +365,74 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ql1-Aw-TxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-856" y="642"/>
+            <point key="canvasLocation" x="-4778" y="1122"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="9Oc-Y0-VfD">
+            <objects>
+                <viewController title="Detail" id="SkG-sK-sIX" customClass="DetailViewController" customModule="Paris_Games_Week" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qrK-6A-Ibo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hcs-ZF-Lkb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AoG-g2-Bvz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nom du Stand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vN7-C6-wYb">
+                                <rect key="frame" x="20" y="84" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Localisation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuD-R7-6DY">
+                                <rect key="frame" x="20" y="151" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJE-zl-aDr">
+                                <rect key="frame" x="20" y="236" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyt-Ai-LiL">
+                                <rect key="frame" x="20" y="113" width="371" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbc-Fi-qLF">
+                                <rect key="frame" x="20" y="175" width="371" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FT2-hb-P5B">
+                                <rect key="frame" x="20" y="265" width="402" height="107"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Detail" id="xBo-h7-vK4"/>
+                    <connections>
+                        <outlet property="standDescription" destination="FT2-hb-P5B" id="Cbw-QD-aiX"/>
+                        <outlet property="standName" destination="Nyt-Ai-LiL" id="ahy-l4-NXd"/>
+                        <outlet property="standPlace" destination="zbc-Fi-qLF" id="RPi-J3-VbV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mgT-nZ-ARZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="2849"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="oHK-Rl-UhQ"/>
+        <segue reference="rwI-Sg-bgC"/>
+    </inferredMetricsTieBreakers>
 </document>
