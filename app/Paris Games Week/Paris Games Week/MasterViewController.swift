@@ -39,11 +39,7 @@ class MasterViewController: UITableViewController {
     }
 
     func insertNewObject(sender: AnyObject) {
-<<<<<<< HEAD
-        //objects.insert(NSDate(), atIndex: 0)
-        let indexPath = NSIndexPath(forRow: 0, inSection: 0)
-        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
-=======
+
         /*let book3 = Book()
         print(myBookStore.books)
         book3.title = "kikoo"
@@ -91,7 +87,6 @@ class MasterViewController: UITableViewController {
         alert.addAction(cancelAction)
         
         presentViewController(alert, animated: true, completion: nil)
->>>>>>> origin/master
     }
 
     // MARK: - Segues
@@ -99,15 +94,10 @@ class MasterViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {
-<<<<<<< HEAD
-                let selectedInfo:Info = InfosDisplay().infos[indexPath.row]
-                let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
-                controller.detailItem = selectedInfo
-=======
+
                 let selectedBook:Stand = myStandStore.stands[indexPath.row]
                 let controller = (segue.destinationViewController as! UINavigationController).topViewController as! DetailViewController
                 controller.detailItem = selectedBook
->>>>>>> origin/master
                 controller.navigationItem.leftBarButtonItem = self.splitViewController?.displayModeButtonItem()
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -121,21 +111,15 @@ class MasterViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-<<<<<<< HEAD
-        return InfosDisplay().infos.count
-=======
+
         return myStandStore.stands.count
->>>>>>> origin/master
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-<<<<<<< HEAD
-        cell.textLabel!.text? = InfosDisplay().infos[indexPath.row].title
-=======
+
         cell.textLabel!.text = myStandStore.stands[indexPath.row].title
->>>>>>> origin/master
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
     }
