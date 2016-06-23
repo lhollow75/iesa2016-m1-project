@@ -58,6 +58,17 @@ class MasterViewController: UITableViewController {
         let saveAction = UIAlertAction(title: "Save", style: .Default) {
             (action: UIAlertAction) -> Void in
                 let textField = alert.textFields![0]
+            
+            let stand = Stand()
+            print(self.myStandStore.stands)
+            stand.title = "kikoo"
+            stand.author = "Axel"
+            stand.description = "coucou"
+            print(stand.title)
+            self.myStandStore.stands.append(stand)
+            print(self.myStandStore.stands)
+            print(self.myStandStore.stands[2].title)
+            let indexPath = NSIndexPath(forRow: 2, inSection: 0)
                 //print(self)
                 //self.createBookWithTitle(textField.text!)
                 self.tableView.reloadData()
