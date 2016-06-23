@@ -401,7 +401,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
         <!--Master-->
         <scene sceneID="pDi-fW-7nI">
             <objects>
-                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="peC-EJ-4TX" customClass="MasterViewController" customModule="Paris_Games_Week" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Master" clearsSelectionOnViewWillAppear="NO" id="peC-EJ-4TX" customClass="SessionView" customModule="Paris_Games_Week" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C1d-b7-hhI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -432,7 +432,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                             <outlet property="delegate" destination="peC-EJ-4TX" id="Ptu-YM-21M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Menu" id="745-r9-fmW"/>
+                    <navigationItem key="navigationItem" title="Planning des Sessions" id="745-r9-fmW"/>
                     <connections>
                         <segue destination="UOd-ve-QFu" kind="push" id="8LI-i7-jTY"/>
                     </connections>
