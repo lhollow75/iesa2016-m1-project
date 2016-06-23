@@ -53,8 +53,6 @@ class MasterViewController: UITableViewController {
             stand.place = "Axel"
             stand.description = "coucou"
             self.myStandStore.stands.append(stand)
-            print(self.myStandStore.stands)
-            print(self.myStandStore.stands[2].name)
             let indexPath = NSIndexPath(forRow: 2, inSection: 0)
             self.tableView.reloadData()
         }
@@ -115,7 +113,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            //objects.removeAtIndex(indexPath.row)
+            myStandStore.stands.removeAtIndex(indexPath.row)
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
