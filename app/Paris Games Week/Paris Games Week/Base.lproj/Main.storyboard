@@ -258,10 +258,10 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
             </objects>
             <point key="canvasLocation" x="-1517" y="-671"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu-->
         <scene sceneID="ZOC-x0-bQz">
             <objects>
-                <viewController id="TLV-yc-Ech" sceneMemberID="viewController">
+                <viewController id="TLV-yc-Ech" customClass="Menu" customModule="Paris_Games_Week" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="t9M-TU-X3u"/>
                         <viewControllerLayoutGuide type="bottom" id="AjF-Zm-7CG"/>
@@ -271,30 +271,45 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXR-U7-1Ib">
-                                <rect key="frame" x="228" y="128" width="48" height="30"/>
+                                <rect key="frame" x="95" y="144" width="48" height="30"/>
                                 <state key="normal" title="Stands"/>
                                 <connections>
                                     <segue destination="7bK-jq-Zjz" kind="push" id="rwI-Sg-bgC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1k-DM-TrF">
-                                <rect key="frame" x="205" y="324" width="95" height="30"/>
-                                <state key="normal" title="Info pratiques"/>
-                                <connections>
-                                    <segue destination="gZk-Wa-wtQ" kind="push" id="2qC-Id-2tt"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Lb-CqU">
-                                <rect key="frame" x="156" y="221" width="205" height="30"/>
+                                <rect key="frame" x="37" y="212" width="205" height="30"/>
                                 <state key="normal" title="Planning des sessions"/>
                                 <connections>
                                     <segue destination="peC-EJ-4TX" kind="push" id="Q5j-k7-Mmi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3N-GU-n2g">
+                                <rect key="frame" x="62" y="99" width="450" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temps avant la PGW :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enY-zg-INY">
+                                <rect key="frame" x="62" y="64" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1k-DM-TrF">
+                                <rect key="frame" x="80" y="285" width="95" height="30"/>
+                                <state key="normal" title="Info pratiques"/>
+                                <connections>
+                                    <segue destination="gZk-Wa-wtQ" kind="push" id="2qC-Id-2tt"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bhD-dt-Ops"/>
+                    <connections>
+                        <outlet property="compteur" destination="P3N-GU-n2g" id="76E-E3-f45"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08a-ac-YgG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -457,7 +472,7 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gio-OQ-dtg"/>
         <segue reference="rwI-Sg-bgC"/>
+        <segue reference="Q5j-k7-Mmi"/>
     </inferredMetricsTieBreakers>
 </document>

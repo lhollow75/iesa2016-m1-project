@@ -25,6 +25,7 @@
 		1C5D8A6A1D1D47E000E40DA6 /* SessionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5D8A691D1D47E000E40DA6 /* SessionDetailViewController.swift */; };
 		1C7D5CEC1D1AE99500048533 /* Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEA1D1AE99500048533 /* Stand.swift */; };
 		1C7D5CED1D1AE99500048533 /* StandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEB1D1AE99500048533 /* StandStore.swift */; };
+		1C9E0CC51D1D7B1C001F3E55 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E0CC41D1D7B1C001F3E55 /* Menu.swift */; };
 		1CA61C091D1C304C00EA6EFB /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA61C081D1C304C00EA6EFB /* SessionView.swift */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		1C5D8A691D1D47E000E40DA6 /* SessionDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDetailViewController.swift; sourceTree = "<group>"; };
 		1C7D5CEA1D1AE99500048533 /* Stand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stand.swift; path = "Paris Games Week/Stand.swift"; sourceTree = "<group>"; };
 		1C7D5CEB1D1AE99500048533 /* StandStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StandStore.swift; path = "Paris Games Week/StandStore.swift"; sourceTree = "<group>"; };
+		1C9E0CC41D1D7B1C001F3E55 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		1CA61C081D1C304C00EA6EFB /* SessionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				1CA61C081D1C304C00EA6EFB /* SessionView.swift */,
 				1C5D8A691D1D47E000E40DA6 /* SessionDetailViewController.swift */,
 				0385C5EF1D1AC6E9007B6704 /* DetailViewController.swift */,
+				1C9E0CC41D1D7B1C001F3E55 /* Menu.swift */,
 				0385C5F11D1AC6E9007B6704 /* Main.storyboard */,
 				0385C5F41D1AC6E9007B6704 /* Assets.xcassets */,
 				0385C5F61D1AC6E9007B6704 /* LaunchScreen.storyboard */,
@@ -293,6 +296,7 @@
 				0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */,
 				03887B1A1D1ADA1B005D891E /* info.swift in Sources */,
 				1C7D5CED1D1AE99500048533 /* StandStore.swift in Sources */,
+				1C9E0CC51D1D7B1C001F3E55 /* Menu.swift in Sources */,
 				1C7D5CEC1D1AE99500048533 /* Stand.swift in Sources */,
 				0385C5EE1D1AC6E9007B6704 /* MasterViewController.swift in Sources */,
 				1C177D1D1D1C22FC00098BC9 /* SessionStore.swift in Sources */,
