@@ -274,38 +274,41 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXR-U7-1Ib">
-                                <rect key="frame" x="95" y="144" width="48" height="30"/>
+                                <rect key="frame" x="183" y="380" width="48" height="30"/>
                                 <state key="normal" title="Stands"/>
                                 <connections>
                                     <segue destination="7bK-jq-Zjz" kind="push" id="rwI-Sg-bgC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t07-Lb-CqU">
-                                <rect key="frame" x="37" y="212" width="205" height="30"/>
+                                <rect key="frame" x="105" y="432" width="205" height="30"/>
                                 <state key="normal" title="Planning des sessions"/>
                                 <connections>
                                     <segue destination="peC-EJ-4TX" kind="push" id="Q5j-k7-Mmi"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3N-GU-n2g">
-                                <rect key="frame" x="62" y="99" width="450" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temps avant la PGW :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enY-zg-INY">
-                                <rect key="frame" x="62" y="64" width="167" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1k-DM-TrF">
-                                <rect key="frame" x="80" y="285" width="95" height="30"/>
+                                <rect key="frame" x="160" y="478" width="95" height="30"/>
                                 <state key="normal" title="Info pratiques"/>
                                 <connections>
                                     <segue destination="gZk-Wa-wtQ" kind="push" id="2qC-Id-2tt"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pgw_logo" translatesAutoresizingMaskIntoConstraints="NO" id="8X9-5R-qJJ">
+                                <rect key="frame" x="143" y="72" width="128" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P3N-GU-n2g">
+                                <rect key="frame" x="20" y="284" width="450" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Temps avant la PGW :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enY-zg-INY">
+                                <rect key="frame" x="20" y="249" width="167" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -474,8 +477,11 @@ PARIS EXPO / PORTE DE VERSAILLES </string>
             <point key="canvasLocation" x="-1711" y="2798"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pgw_logo" width="180" height="180"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tsl-Nk-0bq"/>
-        <segue reference="Gio-OQ-dtg"/>
+        <segue reference="rwI-Sg-bgC"/>
+        <segue reference="Q5j-k7-Mmi"/>
     </inferredMetricsTieBreakers>
 </document>
