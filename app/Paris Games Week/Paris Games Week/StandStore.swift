@@ -24,8 +24,7 @@ class StandStore {
         
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("myList") as? NSData {
             let _mySavedList = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Stand]
-            print(_mySavedList)
-            stands = _mySavedList
+                stands = _mySavedList
         }
     }
 }

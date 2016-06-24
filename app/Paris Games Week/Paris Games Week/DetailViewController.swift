@@ -10,12 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-
     @IBOutlet weak var standName: UILabel!
     @IBOutlet weak var standPlace: UILabel!
     @IBOutlet weak var standDescription: UILabel!
-
-
 
     var detailItem: AnyObject? {
         didSet {
