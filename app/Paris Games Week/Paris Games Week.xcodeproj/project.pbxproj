@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0325E2881D1D711B0006D473 /* StandStoreAddTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325E2871D1D711B0006D473 /* StandStoreAddTest.swift */; };
+		0325E2891D1D71260006D473 /* Stand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEA1D1AE99500048533 /* Stand.swift */; };
+		0325E28A1D1D71290006D473 /* StandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7D5CEB1D1AE99500048533 /* StandStore.swift */; };
+		0325E28C1D1D736F0006D473 /* StandStoreRemoveTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0325E28B1D1D736F0006D473 /* StandStoreRemoveTest.swift */; };
 		0385C5EC1D1AC6E9007B6704 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C5EB1D1AC6E9007B6704 /* AppDelegate.swift */; };
 		0385C5EE1D1AC6E9007B6704 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C5ED1D1AC6E9007B6704 /* MasterViewController.swift */; };
 		0385C5F01D1AC6E9007B6704 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0385C5EF1D1AC6E9007B6704 /* DetailViewController.swift */; };
@@ -42,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0325E2871D1D711B0006D473 /* StandStoreAddTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandStoreAddTest.swift; sourceTree = "<group>"; };
+		0325E28B1D1D736F0006D473 /* StandStoreRemoveTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandStoreRemoveTest.swift; sourceTree = "<group>"; };
 		0385C5E81D1AC6E9007B6704 /* Paris Games Week.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paris Games Week.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0385C5EB1D1AC6E9007B6704 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0385C5ED1D1AC6E9007B6704 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -134,8 +140,10 @@
 		0385C6011D1AC6E9007B6704 /* Paris Games WeekTests */ = {
 			isa = PBXGroup;
 			children = (
+				0325E2871D1D711B0006D473 /* StandStoreAddTest.swift */,
 				0385C6021D1AC6E9007B6704 /* Paris_Games_WeekTests.swift */,
 				0385C6041D1AC6E9007B6704 /* Info.plist */,
+				0325E28B1D1D736F0006D473 /* StandStoreRemoveTest.swift */,
 			);
 			path = "Paris Games WeekTests";
 			sourceTree = "<group>";
@@ -297,7 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0325E2881D1D711B0006D473 /* StandStoreAddTest.swift in Sources */,
 				0385C6031D1AC6E9007B6704 /* Paris_Games_WeekTests.swift in Sources */,
+				0325E28A1D1D71290006D473 /* StandStore.swift in Sources */,
+				0325E2891D1D71260006D473 /* Stand.swift in Sources */,
+				0325E28C1D1D736F0006D473 /* StandStoreRemoveTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

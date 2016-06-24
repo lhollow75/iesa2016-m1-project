@@ -20,6 +20,7 @@ class StandStore {
         let stand2 = Stand(name: "Xbox One", place: "1E010", infos: "Stand Xbox One avec gears of War.")
         stands.append(stand2)
         
+        //A Commenter durant le test !
         let defaults = NSUserDefaults.standardUserDefaults()
         
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("myList") as? NSData {
