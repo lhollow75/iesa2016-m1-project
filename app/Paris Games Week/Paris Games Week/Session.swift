@@ -14,6 +14,7 @@ class Session : NSObject {
     var infos: String = ""
     var horaires: String = ""
     
+    
     init(name: String, place: String, infos: String, horaires: String) {
         self.name = name
         self.place = place

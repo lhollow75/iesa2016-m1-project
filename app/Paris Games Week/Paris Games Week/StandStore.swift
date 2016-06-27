@@ -14,18 +14,18 @@ class StandStore {
     init() {
         
 
-        let stand1 = Stand(name: "Playstation", place: "1D032", infos: "Stand playstation avec Uncharted.")
+        let stand1 = Stand(name: "Playstation", place: "1D032", infos: "Stand playstation avec Uncharted.", attente: String(arc4random_uniform(90) + 1))
         stands.append(stand1)
         
-        let stand2 = Stand(name: "Xbox One", place: "1E010", infos: "Stand Xbox One avec gears of War.")
+        let stand2 = Stand(name: "Xbox One", place: "1E010", infos: "Stand Xbox One avec gears of War.", attente: String(arc4random_uniform(90) + 1))
         stands.append(stand2)
         
         //A Commenter durant le test !
-       /* let defaults = NSUserDefaults.standardUserDefaults()
+        let defaults = NSUserDefaults.standardUserDefaults()
         
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("myList") as? NSData {
             let _mySavedList = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Stand]
                 stands = _mySavedList
-        }*/
+        }
     }
 }

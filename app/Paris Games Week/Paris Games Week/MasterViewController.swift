@@ -48,7 +48,7 @@ class MasterViewController: UITableViewController {
             (action: UIAlertAction) -> Void in
                 let textField = alert.textFields![0]
             
-            let stand = Stand(name: textField.text!, place: "Axel", infos: "coucou")
+            let stand = Stand(name: textField.text!, place: "EB24ZX3", infos: "Vos infos ici", attente: String(arc4random_uniform(90) + 1))
 
             self.myStandStore.stands.append(stand)
             let indexPath = NSIndexPath(forRow: 2, inSection: 0)
@@ -58,6 +58,7 @@ class MasterViewController: UITableViewController {
             
             let data = NSKeyedArchiver.archivedDataWithRootObject(self.myStandStore.stands)
             NSUserDefaults.standardUserDefaults().setObject(data, forKey: "myList")
+            print()
 
         }
         
@@ -107,7 +108,7 @@ class MasterViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-        cell.textLabel!.text = myStandStore.stands[indexPath.row].name
+        cell.textLabel!.text = myStandStore.stands[indexPath.row].name + " (" + String(myStandStore.stands[indexPath.row].attente) + " min)"
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         return cell
     }

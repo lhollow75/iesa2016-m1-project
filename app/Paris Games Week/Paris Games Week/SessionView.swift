@@ -48,7 +48,7 @@ class SessionView: UITableViewController {
             (action: UIAlertAction) -> Void in
             let textField = alert.textFields![0]
             
-            let session = Session(name: textField.text!, place: "Axel", infos: "coucou", horaires: "18h00")
+            let session = Session(name: textField.text!, place: "Amphi 5", infos: "Description de la session", horaires: "18h00")
             
             self.mySessionStore.session.append(session)
             let indexPath = NSIndexPath(forRow: 2, inSection: 0)
