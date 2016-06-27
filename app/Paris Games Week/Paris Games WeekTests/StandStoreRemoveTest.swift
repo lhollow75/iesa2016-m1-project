@@ -20,7 +20,7 @@ class StandStoreRemoveTest: XCTestCase {
         super.tearDown()
     }
 
-    func test_remove_stand() {
+    func test_removeStand() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         let standStore = StandStore()

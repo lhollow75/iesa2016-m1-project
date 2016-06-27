@@ -10,8 +10,11 @@ import XCTest
 
 class StandStoreAddTest: XCTestCase {
 
+    var stand :Stand
+    
     override func setUp() {
         super.setUp()
+        stand = Stand(name: "Playstation", place: "Ici", infos: "Aujourd'hui")
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -23,7 +26,6 @@ class StandStoreAddTest: XCTestCase {
     func test_add_stand() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let stand = Stand(name: "Playstation", place: "Ici", infos: "Aujourd'hui")
         let standStore = StandStore()
         standStore.stands.append(stand)
         let last = standStore.stands.count-1

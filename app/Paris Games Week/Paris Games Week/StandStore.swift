@@ -21,11 +21,11 @@ class StandStore {
         stands.append(stand2)
         
         //A Commenter durant le test !
-        let defaults = NSUserDefaults.standardUserDefaults()
+       /* let defaults = NSUserDefaults.standardUserDefaults()
         
         if let data = NSUserDefaults.standardUserDefaults().objectForKey("myList") as? NSData {
             let _mySavedList = NSKeyedUnarchiver.unarchiveObjectWithData(data) as! [Stand]
                 stands = _mySavedList
-        }
+        }*/
     }
 }
