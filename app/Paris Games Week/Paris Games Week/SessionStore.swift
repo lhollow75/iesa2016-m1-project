@@ -19,6 +19,9 @@ class SessionStore {
         
         let session2 = Session(name: "L'univers Nintendo", place: "amphi 2", infos: "A l'aube d'une ère nouvelle, Nintendo sort une console pleine de surprise", horaires: "13h-14h")
         session.append(session2)
+
+        let session3 = Session(name: "Réalité augmentée", place: "amphi 3", infos: "Le développement technologique des outils de réalité augmentée s'accélère avec l'arrivée de nouveaux produits innovants. Le point avec A. ANDRÉ", horaires: "14h-16h")
+        session.append(session2)
         
         let defaults = NSUserDefaults.standardUserDefaults()
         
