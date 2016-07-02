@@ -10,11 +10,11 @@ import XCTest
 
 class StandStoreAddTest: XCTestCase {
 
-    var stand :Stand
+    var stand :Stand!
     
     override func setUp() {
         super.setUp()
-        stand = Stand(name: "Playstation", place: "Ici", infos: "Aujourd'hui")
+        stand = Stand(name: "Playstation", place: "Ici", infos: "Aujourd'hui", attente: "30")
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
