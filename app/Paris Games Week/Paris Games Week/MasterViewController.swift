@@ -58,7 +58,6 @@ class MasterViewController: UITableViewController {
             
             let data = NSKeyedArchiver.archivedDataWithRootObject(self.myStandStore.stands)
             NSUserDefaults.standardUserDefaults().setObject(data, forKey: "myList")
-            print()
 
         }
         
